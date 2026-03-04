@@ -1,5 +1,8 @@
 # Security Agent Testbed
 
+> [!WARNING]
+> **Do not use this project or its dependency versions in production.** Every dependency version was chosen specifically because it contains known security vulnerabilities.
+
 A Next.js project with intentionally vulnerable dependencies, designed as a testbed for security agents and vulnerability scanning tools.
 
 ## Purpose
@@ -53,6 +56,4 @@ npm audit
 your-security-agent scan .
 ```
 
-## Warning
 
-**Do not use this project or its dependency versions in production.** Every dependency version was chosen specifically because it contains known security vulnerabilities.
