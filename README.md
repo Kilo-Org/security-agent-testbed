@@ -44,6 +44,39 @@ npm install --legacy-peer-deps
 
 The `--legacy-peer-deps` flag is needed because some older package versions have conflicting peer dependency requirements.
 
+## Resetting the Testbed
+
+Since security agents will modify this repo (updating dependencies, applying patches, etc.), a reset mechanism is included to restore the repo to its original vulnerable state for repeated testing.
+
+### Initial setup (one time)
+
+After cloning and before running any security agent, snapshot the current state:
+
+```bash
+./reset.sh snapshot
+```
+
+This creates a `baseline` git tag at the current commit and pushes it to the remote.
+
+### After each test run
+
+To restore the repo to its original state:
+
+```bash
+./reset.sh restore
+```
+
+This will:
+1. Hard-reset `main` to the `baseline` tag
+2. Remove **all** untracked files and directories (including `node_modules`)
+3. Force-push `main` to the remote
+
+After restoring, reinstall dependencies:
+
+```bash
+npm install --legacy-peer-deps
+```
+
 ## Usage
 
 This project is not intended to be run as a real application. Its value is in the dependency tree. Typical usage:
