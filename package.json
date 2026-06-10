@@ -74,7 +74,7 @@
     "luxon": "2.3.0",
     "async": "3.2.0",
     "request": "2.88.2",
-    "handlebars": "4.7.6",
+    "handlebars": "4.7.7",
     "ejs": "3.1.6",
     "pug": "3.0.0",
     "webpack": "5.64.0",
