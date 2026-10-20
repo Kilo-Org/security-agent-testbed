@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.4.0",
+    "next": "13.5.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
 
@@ -30,7 +30,7 @@
     "underscore": "1.12.1",
     "xml2js": "0.4.23",
     "helmet": "4.6.0",
-    "mongoose": "5.13.0",
+    "mongoose": "5.13.20",
     "sequelize": "6.6.2",
     "passport": "0.5.0",
     "cookie-parser": "1.4.5",
