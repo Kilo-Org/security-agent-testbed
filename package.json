@@ -84,12 +84,12 @@
     "eslint": "8.20.0",
     "eslint-config-next": "13.4.0",
     "nth-check": "1.0.2",
-    "immer": "9.0.5",
+    "immer": "9.0.6",
     "ua-parser-js": "0.7.28",
     "minimatch": "3.0.4",
     "decode-uri-component": "0.2.0",
-    "loader-utils": "2.0.2",
-    "json-schema": "0.2.3",
+    "loader-utils": "2.0.3",
+    "json-schema": "0.4.0",
     "ansi-regex": "5.0.0"
   }
 }
